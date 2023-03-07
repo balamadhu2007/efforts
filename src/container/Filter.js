@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import  {connect} from 'react-redux'
 import  {setfilter,resetfilter} from  '../Action'
 const Filter = ({filter_name,setfilter,resetfilter}) => {
   const prod=['All Items','Rice Items','Pizza','Hot Drinks','Cold Drinks']
-   const[filter,setFilter]=useState('All Items ')
+   //const[filter,setFilter]=useState('All Items ')
   return (
     <div>
       <center className='mt-3'>
