@@ -3,13 +3,14 @@ import Home from './Home'
 import Orders from './Orders'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 
+
 const App = () => {
   return (
     <div>
       <BrowserRouter>
       <Routes>
-        <Route  path='/' element={ <Home/>}/>
-        <Route  path='/orders' element={ <Orders/>}/>
+        <Route exact path='/' element={ <Home/>}/>
+        <Route exact path='/orders' element={ <Orders/>}/>
 
        </Routes>
       </BrowserRouter>
